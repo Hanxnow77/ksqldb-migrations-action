@@ -6,7 +6,7 @@ CREATE STREAM NEW_ORDER_EVENTS (
   ordertime TIMESTAMP,
   purchase_method STRING
 ) WITH (
-  kafka_topic='all_order_events',
+  kafka_topic='new_order_events',
   partitions=1,
   value_format='json'
 );
